@@ -23,24 +23,25 @@ public class Libro extends Escrito{
 	public void setEdicion(String edicion) {this.edicion =edicion;}
 	public void setInterpretacion(String interpretacion) {this.interpretacion = interpretacion;}
 	
+	@Override
 	public int palabrasTotales(int palabrasPagina) {
 		return 2*this.getPaginas()*palabrasPagina;
 	}
 	
+	@Override
 	public String interpretacion() {
 		return interpretacion;
 	}
 	
+	@Override
 	public String toString() {
-		String r = "";
-		r+= this.getOrigen() + '\n';
-		r+= this.getTitulo() + '\n';
-		r+= this.getAutor() + '\n';
-		r+= this.getPaginas()  + '\n';
-		r+= this.getCo_autor() + '\n';
-		r+= this.getEditorial() + '\n';
-		r+= this.getEdicion();
-		return r;
+		return this.getOrigen() +  
+				"\n" + this.getTitulo() +
+				"\n" + this.getAutor() + 
+				"\n" + this.getPaginas() + 
+				"\n" + this.co_autor + 
+				"\n" + this.editorial + 
+				"\n" + this.edicion;
 	}
 	
 	
