@@ -26,6 +26,8 @@ public class Alfabeto extends Pictograma{
 	public int cantidadLetras() {
 		return Alfabeto.letras.length;
 	}
+	
+	@Override
 	public String interpretacion() {
 		return interpretacion;
 	};
@@ -41,6 +43,7 @@ public class Alfabeto extends Pictograma{
 		return r;
 	}
 */
+	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "A" + ", " + "B" + ", " +"C" + ", " +"D" + ", " +"E" + ", " +"F" + ", " +"G" + ", " +
